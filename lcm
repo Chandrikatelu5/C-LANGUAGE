@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{
+    int a,b,big,step;
+    printf("Enter num1:");
+    scanf("%d",&a);
+    printf("Enter num2:");
+    scanf("%d",&b);
+    big=a>b?a:b;
+    step=big;
+    while(1)
+    {
+    if (big%a==0 && big%b==0)
+    {
+        printf("l.c.m is:%d",big);
+        break;
+    }
+    else
+    big=big+step;
+}
+}
