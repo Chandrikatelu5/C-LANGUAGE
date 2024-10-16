@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+    char a[20];
+    printf("Enter a string:");
+    scanf("%s",a);
+    int l=strlen(a)-1;
+    int i,j;
+    for(i=0,j=l;i<=j;i++,j--)
+    {
+        if(a[i]!=a[j])
+        {
+            printf("NOT PALINDROME");
+            return;
+        }
+    }
+    printf("PALINDROME");
+}
