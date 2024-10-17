@@ -1,0 +1,16 @@
+#include<stdio.h>
+void func(char a[10],char b[10]);
+void main()
+{
+    char a[10],b[10];
+    printf("Enter string1:");
+    scanf("%s",a);
+    printf("Enter string2:");
+    scanf("%s",b);
+    func(a,b);
+}
+void func(char a[10],char b[10])
+{
+    printf("length of string1:%d",strlen(a));
+    printf("\nlength of string2:%d",strlen(b));
+}
