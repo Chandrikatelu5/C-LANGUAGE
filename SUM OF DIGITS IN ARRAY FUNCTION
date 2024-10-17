@@ -1,0 +1,27 @@
+#include<stdio.h>
+int conv(int n);
+void main()
+{
+    int l,a[20];
+    printf("Enter size of array:");
+    scanf("%d",&l);
+    printf("\nEnter elements of array:\n");
+    for(int i=0;i<l;i++)
+    scanf("%d",&a[i]);
+    int sum=0;
+    for(int i=0;i<l;i++)
+    {
+        sum=sum+conv(a[i]);
+    }
+    printf("Sum:%d",sum);
+}
+int conv(int n)
+{
+    int sum=0;
+    while(n>0)
+    {
+        sum=sum+n%10;
+        n=n/10;
+    }
+    return sum;
+}
