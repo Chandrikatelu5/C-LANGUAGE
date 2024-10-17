@@ -4,20 +4,33 @@ void hash();
 void per();
 void main()
 {
-    int n;
+    char s;
     printf("Options:");
-    printf("\n1.*\n2.#\n3.$\n");
+    printf("\n*\n#\n$\n");
     printf("Enter option:");
-    scanf("%d",&n);
-    switch(n)
+    scanf("%c",&s);
+    while(1)
     {
-        case 1:star();
-                break;
-        case 2:hash();
-                break;
-        case 3:per();
-                break;
-        default:printf("wrong");
+    if(s=='*')
+    {
+        star();
+        break;
+    }
+    else if(s=='#')
+    {
+        hash();
+        break;
+    }
+    else if(s=='$')
+    {
+        per();
+    break;
+    }
+    else
+    {
+    printf("wrong symbol");
+    break;
+    }
     }
 }
 void star()
