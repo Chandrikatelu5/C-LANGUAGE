@@ -1,0 +1,58 @@
+#include<stdio.h>
+void star();
+void hash();
+void per();
+void main()
+{
+    int n;
+    printf("Options:");
+    printf("\n1.*\n2.#\n3.$\n");
+    printf("Enter option:");
+    scanf("%d",&n);
+    switch(n)
+    {
+        case 1:star();
+                break;
+        case 2:hash();
+                break;
+        case 3:per();
+                break;
+        default:printf("wrong");
+    }
+}
+void star()
+{
+    int a,i;
+    printf("Enter no.of rows:");
+    scanf("%d",&a);
+    for(i=0;i<=a;i++)
+    {
+        for(int j=0;j<i;j++)
+        printf("*");
+        printf("\n");
+    }
+}
+void hash()
+{
+    int a,i;
+    printf("Enter no.of rows:");
+    scanf("%d",&a);
+    for(i=0;i<=a;i++)
+    {
+        for(int j=0;j<i;j++)
+        printf("#");
+        printf("\n");
+    }
+}
+void per()
+{
+    int a,i;
+    printf("Enter no.of rows:");
+    scanf("%d",&a);
+    for(i=0;i<=a;i++)
+    {
+        for(int j=0;j<i;j++)
+        printf("$");
+        printf("\n");
+    }
+}
