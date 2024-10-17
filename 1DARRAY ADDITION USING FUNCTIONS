@@ -1,0 +1,26 @@
+#include<stdio.h>
+void add(int n,int a[10],int b[10]);
+void main()
+{
+    int n,a[10],b[10];
+    printf("Enter size of the array:");
+    scanf("%d",&n);
+    printf("elements of 1st array:");
+    for(int i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    printf("elements of 2nd array:");
+    for(int i=0;i<n;i++)
+    scanf("%d",&b[i]);
+    add(n,a,b);
+}
+void add(int n,int a[10],int b[10])
+{
+    int c[10];
+    for(int i=0;i<n;i++)
+    {
+        c[i]=a[i]+b[i];
+    }
+    printf("addition of two array:");
+    for(int i=0;i<n;i++)
+    printf(" %d",c[i]);
+}
