@@ -5,7 +5,7 @@ void main()
     int n;
     printf("Enter a no:");
     scanf("%d",&n);
-    printf("Sum of digits of %d is: %d",n,sum(n));
+    printf("Sum of digits in %d is: %d",n,sum(n));
 }
 int sum(int n)
 {
