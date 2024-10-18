@@ -1,0 +1,21 @@
+#include<stdio.h>
+void swap(int *a,int *b);
+void main()
+{
+    int a=2,b=3;
+    int *p,*q;
+    p=&a;
+    q=&b;
+    printf("before swap:a= %d  b=%d",*p,*q);
+    printf("\naddress of a=%d  b=%d",p,q);
+    swap(p,q);
+}
+void swap(int *a,int *b)
+{
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+    printf("\nAfter swap:a= %d  b=%d",*a,*b);
+    printf("\naddress of a=%d  b=%d",a,b);
+}
