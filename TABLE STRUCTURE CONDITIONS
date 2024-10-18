@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<string.h>
+struct person
+{
+    char name[20];
+    int age;
+    int rollno;
+    char grade[20];
+}person[20];
+void main()
+{
+    int n,a;
+    char c[1];
+    printf("Enter no.of records:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    {
+        printf("Enter %d name:",i+1); 
+        scanf("%s",person[i].name);
+        printf("Enter %d age:",i+1);
+        scanf("%d",&person[i].age);
+        printf("Enter %d roll no:",i+1);
+        scanf("%d",&person[i].rollno);
+        printf("Enter %d grade:",i+1);
+        scanf("%s",person[i].grade);
+    }
+    //total table
+    /*for(int i=0;i<n;i++)
+    {
+        printf("\n%d:",i+1);
+        printf("\t%s",person[i].name); 
+        printf("\t\t%d",person[i].age);
+        printf("\t\t%d",person[i].rollno);
+        printf("\t\t%s",person[i].grade);
+        printf("\n");
+    }*/
+    //which record you want
+    /*printf("\nEnter which record you want:");
+    scanf("%d",&a);
+    a--;
+    printf("NAME\tAGE\tROLL NO\tGRADE");
+    printf("\n%s\t%d\t\t%d\t\t%s",person[a].name,person[a].age,person[a].rollno,person[a].grade);*/
+    //particular grade details
+    printf("Enter the grade in which you want details:");
+    scanf("%s",c);
+    for(int i=0;i<n;i++)
+    {
+        if(person[i].grade==c)
+        printf("%s",person[i].name);
+    }
+}
