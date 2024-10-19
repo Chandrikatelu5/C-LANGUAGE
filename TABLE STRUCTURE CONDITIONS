@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 #include<string.h>
 struct person
 {
@@ -10,7 +10,7 @@ struct person
 void main()
 {
     int n,a;
-    char c[1];
+    char c[2];
     printf("Enter no.of records:");
     scanf("%d",&n);
     for(int i=0;i<n;i++)
@@ -41,11 +41,14 @@ void main()
     printf("NAME\tAGE\tROLL NO\tGRADE");
     printf("\n%s\t%d\t\t%d\t\t%s",person[a].name,person[a].age,person[a].rollno,person[a].grade);*/
     //particular grade details
-    printf("Enter the grade in which you want details:");
+    /*printf("Enter the grade in which you want details:");
     scanf("%s",c);
-    for(int i=0;i<n;i++)
+    for(int i = 0; i < n; i++)
     {
-        if(person[i].grade==c)
-        printf("%s",person[i].name);
-    }
+        if(strcmp(person[i].grade,c)==0)
+        {
+            printf("NAME\tAGE\t\tROLL NO\tGRADE");
+            printf("\n%s\t\t%d\t\t%d\t\t%s",person[i].name,person[i].age,person[i].rollno,person[i].grade);
+        }
+    }*/
 }
