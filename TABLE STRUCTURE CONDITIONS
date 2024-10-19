@@ -51,6 +51,7 @@ void main()
             printf("\n%s\t\t%d\t\t%d\t\t%s",person[i].name,person[i].age,person[i].rollno,person[i].grade);
         }
     }*/
+    //records of person whose age is greater than 10
     printf("\ndetails of person whose age is greater than 10");
     printf("\nNAME\tAGE\t\tROLL NO\tGRADE");
     for(int i = 0; i < n; i++)
