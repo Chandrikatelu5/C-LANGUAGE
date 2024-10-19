@@ -1,0 +1,24 @@
+#include<stdio.h>
+int factorial(int n) 
+{
+    if (n == 0) 
+    return 1;
+    return n * factorial(n - 1);
+}
+
+void main() {
+    int n, r;
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    printf("Enter number of seats: ");
+    scanf("%d", &r);
+    if (n < r) 
+    {
+        printf("seats cannot be greater than students.");
+    } 
+    else 
+    {
+        int ways = factorial(n) / factorial(n - r);
+        printf("Number of ways to arrange %d students in %d seats is %d", n, r, ways);
+    }
+}
